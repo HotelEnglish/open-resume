@@ -20,8 +20,8 @@ export default function ImportResume() {
       <div className="mx-auto mt-14 max-w-3xl rounded-md border border-gray-200 px-10 py-10 text-center shadow-md">
         {!hasUsedAppBefore ? (
           <>
-            <h1 className="text-lg font-semibold text-gray-900">
-              Import data from an existing resume
+                         <h1 className="text-lg font-semibold text-gray-900">
+              从现有简历导入数据
             </h1>
             <ResumeDropzone
               onFileUrlChange={onFileUrlChange}
@@ -31,8 +31,8 @@ export default function ImportResume() {
               <>
                 <OrDivider />
                 <SectionWithHeadingAndCreateButton
-                  heading="Don't have a resume yet?"
-                  buttonText="Create from scratch"
+                  heading="还没有简历吗？"
+                  buttonText="从零创建"
                 />
               </>
             )}
@@ -42,14 +42,14 @@ export default function ImportResume() {
             {!hasAddedResume && (
               <>
                 <SectionWithHeadingAndCreateButton
-                  heading="You have data saved in browser from prior session"
-                  buttonText="Continue where I left off"
+                  heading="您有上一次会话中保存在浏览器中的数据"
+                  buttonText="继续我上次未完成的部分"
                 />
-                <OrDivider />
+                <OrDivider /> 
               </>
             )}
             <h1 className="font-semibold text-gray-900">
-              Override data with a new resume
+              用新简历覆盖数据
             </h1>
             <ResumeDropzone
               onFileUrlChange={onFileUrlChange}
