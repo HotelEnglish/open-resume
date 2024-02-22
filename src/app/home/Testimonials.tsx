@@ -11,25 +11,25 @@ const TESTIMONIALS = [
   {
     src: testimonialSpiegelSrc,
     quote:
-      "Students often make silly mistakes on their resume by using inconsistent bullet points or font sizes. OpenResume’s auto format feature is a great help to ensure consistent format.",
-    name: "Ms. Spiegel",
-    title: "Educator",
+      "学生们经常在简历上犯一些愚蠢的错误，比如使用不一致的项目符号或字体大小。OpenResume的自动格式化功能极大地帮助确保了格式的一致性。",
+    name: "施皮格尔女士",
+    title: "教育工作者",
   },
   {
     src: testimonialSantiSrc,
     quote:
-      "I used OpenResume during my last job search and was invited to interview at top tech companies such as Google and Amazon thanks to its slick yet professional resume design.",
-    name: "Santi",
-    title: "Software Engineer",
+      "我在上次求职时使用了OpenResume，并因其时尚且专业的简历设计而获得了谷歌和亚马逊等顶级科技公司的面试邀请。",
+    name: "桑蒂",
+    title: "软件工程师",
   },
   {
     src: testimonialVivianSrc,
     quote:
-      "Creating a professional resume on OpenResume is so smooth and easy! It saves me so much time and headache to not deal with google doc template.",
-    name: "Vivian",
-    title: "College Student",
+      "在OpenResume上创建一份专业简历真是既流畅又简单！它帮我节省了很多时间，避免了处理Google文档模板所带来的麻烦。",
+    name: "薇薇安",
+    title: "大学生",
   },
-];
+]; 
 
 const LG_TESTIMONIALS_CLASSNAMES = [
   "z-10",
