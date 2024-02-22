@@ -39,7 +39,7 @@ export const ProjectsForm = () => {
           >
             <Input
               name="project"
-              label="Project Name"
+              label="项目名称"
               placeholder="OpenResume"
               value={project}
               onChange={handleProjectChange}
@@ -47,7 +47,7 @@ export const ProjectsForm = () => {
             />
             <Input
               name="date"
-              label="Date"
+              label="日期"
               placeholder="Winter 2022"
               value={date}
               onChange={handleProjectChange}
@@ -55,7 +55,7 @@ export const ProjectsForm = () => {
             />
             <BulletListTextarea
               name="descriptions"
-              label="Description"
+              label="详情描述"
               placeholder="Bullet points"
               value={descriptions}
               onChange={handleProjectChange}
