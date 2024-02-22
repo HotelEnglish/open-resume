@@ -132,11 +132,11 @@ export const ResumeDropzone = ({
                 !playgroundView && "text-lg font-semibold"
               )}
             >
-              添加一个PDF文件或直接拖进来
+              上传PDF文件或直接拖进来
             </p>
             <p className="flex text-sm text-gray-500">
               <LockClosedIcon className="mr-1 mt-1 h-3 w-3 text-gray-400" />
-              你上传的文件仅在你的浏览器中使用
+              你所上传的文件仅在你自己的浏览器中使用
             </p>
           </>
         ) : (
@@ -172,7 +172,7 @@ export const ResumeDropzone = ({
                 />
               </label>
               {hasNonPdfFile && (
-                <p className="mt-6 text-red-400">仅支持PDF文件</p>
+                <p className="mt-6 text-red-400">仅支持PDF文件喔！</p>
               )}
             </>
           ) : (
@@ -187,7 +187,8 @@ export const ResumeDropzone = ({
                 </button>
               )}
               <p className={cx(" text-gray-500", !playgroundView && "mt-6")}>
-                Note: {!playgroundView ? "Import" : "Parser"} 单列简历效果最好
+                温馨提示：{!playgroundView ? "Import" : "Parser"} 你最好上传
+                单列简历
               </p>
             </>
           )}
