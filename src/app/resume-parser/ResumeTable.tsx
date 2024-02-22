@@ -59,14 +59,14 @@ export const ResumeTable = ({ resume }: { resume: Resume }) => {
   return (
     <table className="mt-2 w-full border text-sm text-gray-900">
       <tbody className="divide-y text-left align-top">
-        <TableRowHeader>Profile</TableRowHeader>
+        <TableRowHeader>个人信息</TableRowHeader>
         <TableRow label="Name" value={resume.profile.name} />
         <TableRow label="Email" value={resume.profile.email} />
         <TableRow label="Phone" value={resume.profile.phone} />
         <TableRow label="Location" value={resume.profile.location} />
         <TableRow label="Link" value={resume.profile.url} />
         <TableRow label="Summary" value={resume.profile.summary} />
-        <TableRowHeader>Education</TableRowHeader>
+        <TableRowHeader>教育</TableRowHeader>
         {educations.map((education, idx) => (
           <Fragment key={idx}>
             <TableRow label="School" value={education.school} />
@@ -84,7 +84,7 @@ export const ResumeTable = ({ resume }: { resume: Resume }) => {
             />
           </Fragment>
         ))}
-        <TableRowHeader>Work Experience</TableRowHeader>
+        <TableRowHeader>工作经历/TableRowHeader>
         {workExperiences.map((workExperience, idx) => (
           <Fragment key={idx}>
             <TableRow label="Company" value={workExperience.company} />
@@ -102,7 +102,7 @@ export const ResumeTable = ({ resume }: { resume: Resume }) => {
           </Fragment>
         ))}
         {resume.projects.length > 0 && (
-          <TableRowHeader>Projects</TableRowHeader>
+          <TableRowHeader>项目</TableRowHeader>
         )}
         {resume.projects.map((project, idx) => (
           <Fragment key={idx}>
@@ -119,7 +119,7 @@ export const ResumeTable = ({ resume }: { resume: Resume }) => {
             />
           </Fragment>
         ))}
-        <TableRowHeader>Skills</TableRowHeader>
+        <TableRowHeader>技能</TableRowHeader>
         <TableRow label="Descriptions" value={skills} />
       </tbody>
     </table>
